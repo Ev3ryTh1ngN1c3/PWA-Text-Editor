@@ -41,7 +41,7 @@
 
   ## What Was Learned
 
-  Through this project, we gained valuable insights and skills in developing Progressive Web Applications (PWAs) <br>
+  Through this project, we gained valuable insights & skills in developing Progressive Web Applications (PWAs) <br>
   with advanced features :
 
 - implemented IndexedDB for local storage to enable offline functionality <br>
