@@ -54,8 +54,6 @@
 - understanding the importance of PWAs in modern web development <br>
   & their benefits for users in terms of reliability & accessibility
 
-This section highlights the specific technical skills and knowledge acquired during the development of the PWA Text Editor project, emphasizing the importance of PWAs and the enhancements they bring to web applications.
-
   ## Acknowledgments
 
   thank you the UCF Coding BootCamp Teacher, TAs, Educational Assistants & Tutors, <br>
