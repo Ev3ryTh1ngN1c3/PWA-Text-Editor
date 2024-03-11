@@ -1,21 +1,47 @@
+// Import the openDB function from the 'idb' library
 import { openDB } from 'idb';
 
-const initdb = async () =>
+// Function to initialize the IndexedDB database
+const initdb = async () => {
+  // Open the 'jate' database with version 1
   openDB('jate', 1, {
+    // Upgrade function to handle database upgrades
     upgrade(db) {
+      // Check if the object store 'jate' already exists
       if (db.objectStoreNames.contains('jate')) {
         console.log('jate database already exists');
         return;
       }
+      // Create the 'jate' object store with auto-incrementing key 'id'
       db.createObjectStore('jate', { keyPath: 'id', autoIncrement: true });
       console.log('jate database created');
     },
   });
+};
 
-// TODO: Add logic to a method that accepts some content and adds it to the database
-export const putDb = async (content) => console.error('putDb not implemented');
+// Method to add content to the database
+export const putDb = async (content) => {
+  // Open the 'jate' database
+  const db = await openDB('jate', 1);
+  // Start a read-write transaction
+  const tx = db.transaction('jate', 'readwrite');
+  const store = tx.objectStore('jate');
+  // Add the provided content to the object store
+  await store.add(content);
+  // Complete the transaction
+  await tx.done;
+};
 
-// TODO: Add logic for a method that gets all the content from the database
-export const getDb = async () => console.error('getDb not implemented');
+// Method to get all content from the database
+export const getDb = async () => {
+  // Open the 'jate' database
+  const db = await openDB('jate', 1);
+  // Start a read-only transaction
+  const tx = db.transaction('jate', 'readonly');
+  const store = tx.objectStore('jate');
+  // Retrieve all content from the object store
+  return store.getAll();
+};
 
+// Initialize the IndexedDB database when the script is executed
 initdb();
