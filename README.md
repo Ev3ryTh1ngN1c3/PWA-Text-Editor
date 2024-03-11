@@ -15,10 +15,10 @@
   
   ## Description
 
-   This project is a Progressive Web Application (PWA) that functions as a text editor, allowing users to create <br>
-   and save notes or code snippets with or without an internet connection. The application utilizes IndexedDB <br>
-   for local storage, includes a service worker for offline functionality & can be installed as a PWA. Users can <br>
-   easily navigate the intuitive interface to write & save their content, making it accessible for later use. 
+  This project is a Progressive Web Application (PWA) that functions as a text editor, allowing users to create <br>
+  and save notes or code snippets with or without an internet connection. The application utilizes IndexedDB <br>
+  for local storage, includes a service worker for offline functionality & can be installed as a PWA. Users can <br>
+  easily navigate the intuitive interface to write & save their content, making it accessible for later use. 
   
   ## Usage 
 
