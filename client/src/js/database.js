@@ -27,9 +27,10 @@ export const putDb = async (content) => {
   const tx = db.transaction('jate', 'readwrite');
   const store = tx.objectStore('jate');
   // Add the provided content to the object store
-  await store.add(content);
+  const request = store.put({id:1, value: content});
   // Complete the transaction
-  await tx.done;
+  // await tx.done;
+  const result=await request;
 };
 
 // Method to get all content from the database
@@ -40,7 +41,9 @@ export const getDb = async () => {
   const tx = db.transaction('jate', 'readonly');
   const store = tx.objectStore('jate');
   // Retrieve all content from the object store
-  return store.getAll();
+  const request=store.get(1);
+  const result=await request;
+  return result?.value;
 };
 
 // Initialize the IndexedDB database when the script is executed

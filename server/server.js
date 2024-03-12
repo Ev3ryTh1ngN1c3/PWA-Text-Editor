@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Require and use the HTML routes defined in './routes/htmlRoutes'
-require('./server/routes/htmlRoutes')(app);
+require('./routes/htmlRoutes')(app);
 
 // Start the server to listen on the specified port & log a message
 app.listen(PORT, () => console.log(`Now listening on port: ${PORT}`));
