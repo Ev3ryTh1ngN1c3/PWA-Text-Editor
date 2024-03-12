@@ -21,3 +21,4 @@ require('../../server/routes/htmlRoutes')(app);
 
 // Start the server to listen on the specified port & log a message
 app.listen(PORT, () => console.log(`Now listening on port: ${PORT}`));
+
