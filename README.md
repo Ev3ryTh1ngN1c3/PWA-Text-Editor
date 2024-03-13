@@ -67,4 +67,4 @@ or contact via LinkedIn : https://www.linkedin.com/in/lisa-brongo-92987028a/
 
 ## Screenshot
 
- 
+ ![JATE](https://github.com/Ev3ryTh1ngN1c3/PWA-Text-Editor/assets/143395934/bad5b2ee-fb92-442d-9d0d-2e029030b408)
