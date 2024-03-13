@@ -32,6 +32,8 @@ easily navigate the intuitive interface to write & save content, making it acces
 
 ## Live URL 
 
+https://pwa-text-editor-h9ud.onrender.com
+
 ## Project Motivation
 
 The motivation behind this project was to create a reliable & versatile text editor that operates as a <br>
@@ -56,8 +58,7 @@ with advanced features : <br>
 
 ## Acknowledgments
 
-thank you to the UCF Coding BootCamp Teacher, TAs, Educational Assistants & Tutors, <br>
-specifically 
+thank you to the UCF Coding BootCamp Teacher, TAs, Educational Assistants & Tutors
 
 ## Questions
 
